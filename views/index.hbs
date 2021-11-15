@@ -1,0 +1,36 @@
+<title>Home</title>
+<div class=" container-fluid p-5">
+    <div class="row">
+        <h2 class="h2 text-light text-center">Welcome To My Site</h2>
+    </div>
+     <div class="row border border-1 border-light mt-3">
+    </div>
+    <div class="row mt-4">
+        
+    </div>
+    <div id="myGame" class="row mt-5 border border-2 border-light w-25">
+        <h4 class="text-light text-center bg-success p-2 rounded">
+            Rock, Paper, Scissors Game
+        </h4>
+        <form action="/" class="form w-100 mx-auto p-3 ">
+            <div class="form-group">
+                <label for="inp" class="form-label h4 mb-2 text-light">Choose your option:</label>
+                <select class="form-control" value="{{input}}" name="data" id="inp">
+                <option value="0">Rock ⛰️</option>
+                <option value="1">Paper 📰</option>
+                <option value="2">Scissors ✂️</option>
+                </select>
+            </div>
+            
+            <div class=" text-center text-light">
+                <button class="btn btn-success form-control t-1" type="submit">Go</button>
+                <br>
+                <h3 class="mt-2 p-2">
+                    {{winner}}
+                </h3>
+                <p class="text-success">User selected {{input}}<br>Computer selected {{computer}}</p>
+            </div>
+        </form>
+    </div>
+
+</div>
