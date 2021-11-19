@@ -1,36 +1,70 @@
-<title>Home</title>
-<div class=" container-fluid p-5">
-    <div class="row">
-        <h2 class="h2 text-light text-center">Welcome To My Site</h2>
-    </div>
-     <div class="row border border-1 border-light mt-3">
-    </div>
-    <div class="row mt-4">
-        
-    </div>
-    <div id="myGame" class="row mt-5 border border-2 border-light w-25">
-        <h4 class="text-light text-center bg-success p-2 rounded">
-            Rock, Paper, Scissors Game
-        </h4>
-        <form action="/" class="form w-100 mx-auto p-3 ">
-            <div class="form-group">
-                <label for="inp" class="form-label h4 mb-2 text-light">Choose your option:</label>
-                <select class="form-control" value="{{input}}" name="data" id="inp">
-                <option value="0">Rock ⛰️</option>
-                <option value="1">Paper 📰</option>
-                <option value="2">Scissors ✂️</option>
-                </select>
+<div class="d-flex justify-content-center align-items-center">
+    <div class="container-fluid w-75 p-4 bg-success" style="border-radius: 50px; margin: 35px;">
+            <div class="row p-3">
+                <div class="col-3">
+                    <img src="https://i.pinimg.com/originals/8d/43/68/8d436842ad2b8616b8ddd7c8c7f64f98.png" style="border-radius: 50%;width:200px;height:200px;border:7px solid white;" alt="My Profile Image"/>
+                </div>
+                <div class="col-6 d-flex justify-content-center gap-2 flex-column">
+                    <h2 class="text-white">Shubh Patel</h2>
+                    <h4 class="text-light">Web Developer</h4>
+                </div>
             </div>
-            
-            <div class=" text-center text-light">
-                <button class="btn btn-success form-control t-1" type="submit">Go</button>
-                <br>
-                <h3 class="mt-2 p-2">
-                    {{winner}}
-                </h3>
-                <p class="text-success">User selected {{input}}<br>Computer selected {{computer}}</p>
+            <div class="row my-5">
+                <div class="col-12">
+                    <h4 class="text-center bg-primary p-3 rounded-3">Technologies</h4> 
+                    <ul class="d-flex p-2 rounded-3">
+                        <li class="list-group-item list-group-item-action mx-1 rounded-3 d-flex justify-content-center align-items-center">
+                            HTML/CSS
+                        </li>
+                        <li class="list-group-item list-group-item-action mx-1 rounded-3 d-flex justify-content-center align-items-center">
+                            Angular JS
+                        </li>
+                        <li class="list-group-item list-group-item-action mx-1 rounded-3 d-flex justify-content-center align-items-center">
+                            React JS
+                        </li>
+                        <li class="list-group-item list-group-item-action mx-1 rounded-3 d-flex justify-content-center align-items-center">
+                            JAVA
+                        </li>
+                        <li class="list-group-item list-group-item-action mx-1 rounded-3 d-flex justify-content-center align-items-center">
+                            Spring Boot Framework
+                        </li>
+                        <li class="list-group-item list-group-item-action mx-1 rounded-3 d-flex justify-content-center align-items-center">
+                            Node JS
+                        </li>
+                        <li class="list-group-item list-group-item-action mx-1 rounded-3 d-flex justify-content-center align-items-center">
+                            Android
+                        </li>
+                        <li class="list-group-item list-group-item-action mx-1 rounded-3 d-flex justify-content-center align-items-center">
+                            Python
+                        </li>
+                        
+                    </ul>
+                </div>
             </div>
-        </form>
-    </div>
+        {{!-- <div id="myGame" class="row mt-5 border border-2 border-light w-25">
+            <h4 class="text-light text-center bg-success p-2 rounded">
+                Rock, Paper, Scissors Game
+            </h4>
+            <form action="/" class="form w-100 mx-auto p-3 ">
+                <div class="form-group">
+                    <label for="inp" class="form-label h4 mb-2 text-light">Choose your option:</label>
+                    <select class="form-control" value="{{input}}" name="data" id="inp">
+                    <option value="0">Rock ⛰️</option>
+                    <option value="1">Paper 📰</option>
+                    <option value="2">Scissors ✂️</option>
+                    </select>
+                </div>
+                
+                <div class=" text-center text-light">
+                    <button class="btn btn-success form-control t-1" type="submit">Go</button>
+                    <br>
+                    <h3 class="mt-2 p-2">
+                        {{winner}}
+                    </h3>
+                    <p class="text-success">User selected {{input}}<br>Computer selected {{computer}}</p>
+                </div>
+            </form>
+        </div> --}}
 
+    </div>
 </div>

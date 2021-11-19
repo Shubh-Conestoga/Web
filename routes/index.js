@@ -53,7 +53,7 @@ router.get('/',(req,res,next)=>{
       }
     }
   }
-  res.render('index',{title:'index',input:`${play[data]}`,computer: computerGuess,winner:result});  
+  res.render('index',{title:'Home',input:`${play[data]}`,computer: computerGuess,winner:result});  
 })
 
 module.exports = router;
