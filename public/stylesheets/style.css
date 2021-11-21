@@ -9,13 +9,9 @@ a {
   color: #00B7FF;
 }
 
-.mybody{
-  height: 100vh;
-}
 
 .myHeader {
   height: 10vh;
-  position: fixed;
   z-index: 2;
   bottom: 0px;
   background-color: #353B40;
@@ -23,6 +19,26 @@ a {
   transition: .5s;
   border-radius: 70px 70px 0px 0px;
 
+}
+@media only screen and (max-width:600px) {
+
+  .myHeader {
+    height: 10vh;
+    z-index: 2;
+    bottom: 0px;
+    background-color: #353B40;
+    width: 100%;
+    transition: .5s;
+    border-radius: 0px;
+  }
+
+  .myHeader:hover
+{
+  height: 15vh;
+  border-radius: 0px;
+  background-color: white;
+}
+  
 }
 .myHeader:hover
 {
@@ -37,5 +53,17 @@ a {
   transition: .3s;
 }
 .myLinks:hover > a{
-  color: white;
+  color:white;
+}
+
+.mycards
+{
+  width: 30.2rem;
+  flex-shrink: 1;
+}
+@media screen and (max-width:1100px) {
+  .mycards
+  {
+    width: 100%;
+  }
 }

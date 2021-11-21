@@ -5,11 +5,28 @@
     <link rel='stylesheet' href='/stylesheets/style.css' />
     <link rel='stylesheet' href='/stylesheets/bootstrap.css' />
   </head>
-  <body>
-    <div class="mybody bg-dark">
+  
+  <body class="bg-dark">
+
+    <div class="header text-center position-fixed my-auto  mb-5 d-flex align-items-center justify-content-center" style="height:10vh;background-color:#353B40;width:100%; border-radius:0 0 70px 70px; z-index: 12; top:0;">
+    <h2 class="text-white">
+        {{title}}
+    </h2>
+    </div>
+    <div class="header text-center d-hidden" style="display:hidden;height:7vh;background-color:#353B40;width:100%; border-radius:0 0 70px 70px; z-index: 12; top:0;">
+        <h2 class="text-white">
+        </h2>
+    </div>
+
+    <div class="mybody ">
       {{{body}}}
     </div>
-    <div class="d-flex flex-fill justify-content-around myHeader">
+
+  <div style="display:flex;z-index:0;opacity:0;" class=" flex-fill justify-content-around myHeader">
+      
+    </div>
+
+    <div class="d-flex flex-fill position-fixed justify-content-around myHeader">
       <div class="align-self-center myLinks">
          <a href="/" class="nav-link h4"> 🏠 Home</a>
       </div>
@@ -23,6 +40,8 @@
          <a href="/experience" class="nav-link h4">👨‍🔧 Experience</a>
       </div>
     </div>
+
+    
     {{!-- <nav class="navbar navbar-expand bg-light p-2 myHeader">
       <a href="#" class="navbar-brand font-weight-bold p-2">Shubh Patel</a>
       <ul class="navbar-nav">
