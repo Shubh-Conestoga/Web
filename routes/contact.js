@@ -16,7 +16,7 @@ router.post('/submit',(req,res,next)=>{
         "success":isSuccess,
         title:"Contact",
         "core":false,
-    })
+    }) 
 });
 
 
