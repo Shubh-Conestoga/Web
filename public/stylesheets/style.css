@@ -77,19 +77,21 @@ a {
 
 .data
 {
-  display: none;
+  height: 0;
+  width: 0;
+  opacity: 0;
+  overflow: hidden;
 }
-.connectMenu:hover
-{
-  transition: .5s;
+
+.connectMenu:hover > .data{
   width: auto;
   height: auto;
+  opacity: 1;
+  transition: 1s;
 
-}
-.connectMenu:hover > .data{
-  display: block;
 }
 
 .connectMenu:hover > .myarrow{
+  transition: .5s;
   display: none;
 }
