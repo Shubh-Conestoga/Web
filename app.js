@@ -4,6 +4,7 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
+// Imporing all routers which are exported from routes folder
 var indexRouter = require('./routes/index');
 var portfolioRouter = require('./routes/porfolio');
 var experienceRouter = require('./routes/experience');
@@ -23,6 +24,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+//adding middleware to main app
 app.use('/', indexRouter);
 app.use('/portfolio',portfolioRouter)
 app.use('/experience',experienceRouter);

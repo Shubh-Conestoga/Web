@@ -1,3 +1,5 @@
+{{!-- Contact Page --}}
+{{!-- Form action is submiting post data to /contact/submit --}}
 <form class="form bg-success p-3 w-75 m-2 rounded-3 mx-auto" method="post" action="/contact/submit">
     <h2 class="text-center">Enter your details</h2>
     <div class="input-fields w-50  p-3  mx-auto">
@@ -14,10 +16,13 @@
     </div>
    
     <div class="text-center mt-2">
+        {{!-- if success is true when /contact/submit is asked--}}
         {{#if success}}
     <p class="text-white">The response has been registered</p>
+    {{!-- if core is true when simple /contact is asked--}}
     {{else if core}}
     <p class="text-white"></p>
+    {{!-- if success is false then showing error when /contact/submit is asked and data passed through the form is invalid --}}
     {{else}}    
     <p class="text-white">Please enter all the details</p>
     {{/if}}
